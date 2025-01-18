@@ -1,10 +1,8 @@
 # Where Are You (WAY)
 
-- Refactor set_flag & parse_source_files to integrate config functionality
 
-ISSUE:
-1. If a word matches it does not show
-	For example: 
-	Search paterrn is "help"
-	If a line in source is only: "help"
-	This will not be shown
+## TODO:
+1. Refactor
+	* Focusing on modularality, portability, and redudancy
+2. Fix config support
+3. Make sure name issues are fixed
