@@ -1,0 +1,8 @@
+- Refactor set_flag & parse_source_files to integrate config functionality
+
+ISSUE:
+1. If a word matches it does not show
+	For example: 
+	Search paterrn is "help"
+	If a line in source is only: "help"
+	This will not be shown
