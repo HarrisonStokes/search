@@ -1,21 +1,24 @@
 #include <iostream>
+#include <cstdint>
 #include <string>
 #include <stdexcept>
 #include <unordered_map>
 
-const uint8_t QUIETMASK = 1;
-const uint8_t COLORMASK = 2;
-const uint8_t CASEMASK = 4;
-const uint8_t RECURMASK = 8;
-const uint8_t DIRMASK = 16;
+namespace FLAG {
+	const uint8_t QUIET	= 1;
+	const uint8_t COLOR	= 2;
+	const uint8_t CASE	= 4;
+	const uint8_t RECUR	= 8;
+	const uint8_t DIRM	= 16;
+};
 
 uint8_t set_flags(std::string flags) {
 	const std::unordered_map<char, uint8_t> lookup {
-		{'q', QUIETMASK},
-		{'c', COLORMASK},
-		{'I', CASEMASK},
-		{'R', RECURMASK},
-		{'d', DIRMASK}
+		{'q', FLAG::QUIET},
+		{'c', FLAG::COLOR},
+		{'I', FLAG::CASE},
+		{'R', FLAG::RECUR},
+		{'d', FLAG::DIRM}
 	};
 	uint8_t flag_bitfield = 0;
 	for(uint64_t idx = 0; idx < flags.length(); idx++) {
