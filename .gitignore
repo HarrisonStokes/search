@@ -31,5 +31,8 @@
 *.out
 *.app
 
+# VIM undo file
+*.un~
+
 # Tokens
 .git-token.txt
