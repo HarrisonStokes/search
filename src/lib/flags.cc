@@ -1,16 +1,12 @@
-#include <iostream>
-#include <cstdint>
-#include <string>
-#include <stdexcept>
-#include <unordered_map>
-
+#include "../include/flags.h"
+ 
 namespace FLAG {
 	const uint8_t QUIET	= 1;
 	const uint8_t COLOR	= 2;
 	const uint8_t CASE	= 4;
 	const uint8_t RECUR	= 8;
 	const uint8_t DIRM	= 16;
-};
+}
 
 uint8_t set_flags(std::string flags) {
 	const std::unordered_map<char, uint8_t> lookup {

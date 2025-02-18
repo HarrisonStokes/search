@@ -1,9 +1,4 @@
-/*
-	Purpose:
-		To handle cmdline arguments
- */
-#include <string>
-#include <vector>
+#include "../include/cmdline.h"
 
 #define FLAG_START '-'
 #define OUTPUT_START "-o"

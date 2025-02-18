@@ -3,7 +3,7 @@
 #include <fstream>
 #include <vector>
 #include <string>
-#include "Colors.h"
+#include "include/common.h"
 
 /*
  	Format:
@@ -42,7 +42,6 @@ int main(int argc, char** argv) {
 		}
 		source.close();
 	}
-	copy_outputs(output_stream, output_files);
 }
 
 std::vector<std::string> vectorized(int argc, char** argv) {

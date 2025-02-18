@@ -1,9 +1,4 @@
-#include <vector>
-#include <string>
-#include <fstream>
-#include <ostream>
-#include <cstdint>
-#include "Colors.h"
+#include "../include/search.h"
 
 void search_file(std::ifstream source_file, std::ostream* output_stream, uint8_t flag_bitfield, std::string& pattern) {
 	const std::string MATCHCOLOR = BOLDRED;

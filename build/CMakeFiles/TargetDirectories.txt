@@ -1,0 +1,3 @@
+/home/machinekiller36/way/build/CMakeFiles/way.dir
+/home/machinekiller36/way/build/CMakeFiles/edit_cache.dir
+/home/machinekiller36/way/build/CMakeFiles/rebuild_cache.dir

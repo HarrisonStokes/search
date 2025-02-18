@@ -1,11 +1,4 @@
-/*
- 	Purpose:
-		Used to hold all functions pertaining to configuration file support.
- */
-
-#include <string>
-#include <fstream>
-#include <vector>
+#include "../include/config.h"
 
 #define CONFIG_PATH "config.json"
 #define CONFIG_OUTPUT_KEY "OUTPUTS"
