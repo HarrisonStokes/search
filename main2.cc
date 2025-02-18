@@ -1,7 +1,9 @@
 #include <iostream>
+#include <cstdint>
 #include <fstream>
 #include <vector>
 #include <string>
+#include "Colors.h"
 
 /*
  	Format:
@@ -20,22 +22,27 @@ int main(int argc, char** argv) {
 		std::cerr << "Error: Missing file to search";
 		return -1;
 	}
-	std::vector<std::string> arguments;
-	std::string flags;
-	std::vector<std::string> source_files, output_files;
-	process_inputs(arguments, flags, output_files);
+	std::vector<std::string> arguments, source_files, output_files;
+	std::string flags = "";
+
+	arguments = vectorized(argc, argv);
+	process_inputs(arguments, flags, source_files, output_files);
 	uint8_t flag_bitfield = set_flags(flags);
 	std::ostream& output_stream = set_output(output_files);
 	std::vector<std::string>& patterns = arguments;
+
 	for(uint64_t source_idx = 0; source_idx < source_files.size(); source_idx++) {
 		std::ifstream source(source_files[source_idx]);
 		for(uint64_t pattern_idx = 0; pattern_idx < patterns.size(); pattern_idx++) {
-			std::string message = source_file[file_idx] + ":\t" + RESET + pattern'
 			std::string pattern = patterns[pattern_idx];
-			search(pattern, output_stream, flag_bitfield);
+			std::string message = source_files[source_idx] + ":\t" + RESET + pattern;
+			search_file(source, output_stream, flag_bitfield, pattern);
+			source.clear();
+			source.seekg(0, std::ios::beg);
 		}
+		source.close();
 	}
-
+	copy_outputs(output_stream, output_files);
 }
 
 std::vector<std::string> vectorized(int argc, char** argv) {
@@ -45,18 +52,20 @@ std::vector<std::string> vectorized(int argc, char** argv) {
 	return arguments;
 }
 
-void process_inputs(std::vector<std::string>& arguments, std::string& flags, std::vector<std::string>& source_files, std::vector<std::string>& output_files) {
-	arguments = vectorized(argc, argv);
+void process_inputs(std::vector<std::string>& arguments,
+					std::string& flags,
+					std::vector<std::string>& source_files,
+					std::vector<std::string>& output_files) {
 	flags = get_cmdline_flags(arguments);
 	source_files = get_cmdline_source(arguments);
 	output_files = get_cmdline_output(arguments);
 	if(source_files.empty()) {
 		std::cerr << "Error: Missing files to search";
-		return -1;
+		return;
 	}
 	if(arguments.empty()) {
 		std::cerr << "Error: Missing keywords to search";
-		return -1;
+		return;
 	}
 	if(flags == "" && output_files.empty()) {
 		arguments = process_config();
@@ -82,3 +91,8 @@ std::ostream& set_output(std::vector<std::string>& output_files) {
 	return file_output;
 }
 
+void copy_outputs(std::ostream* output_stream, std::vector<std::string> output_files) {
+	if(output_files.size() < 1)
+		return;
+
+}
