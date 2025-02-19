@@ -14,17 +14,15 @@
 
 */
 
-/*
-###########################################
-Not working:
-     process_inputs()
-	         Not getting source files from command line.
-*/
-
-
 static std::vector<std::string> vectorized(int argc, char** argv);
 static void process_inputs(std::vector<std::string>& arguments, std::string& flags, std::vector<std::string>& source_files, std::vector<std::string>& output_files);
 static std::ostream& set_output(std::vector<std::string>& output_files);
+
+void print(std::vector<std::string> v) {
+	for(uint64_t idx = 0; idx < v.size(); idx++) {
+		std::cout << "Idx " << idx << ": " << v[idx] << "\n";
+	}
+}
 
 int main(int argc, char** argv) {
 	if(argc < 2) {
@@ -60,24 +58,13 @@ std::vector<std::string> vectorized(int argc, char** argv) {
 	return arguments;
 }
 
-void print(std::vector<std::string> v) {
-	for(uint64_t idx = 0; idx < v.size(); idx++) {
-		std::cout << "Idx " << idx << ": " << v[idx] << "\n";
-	}
-}
-
 void process_inputs(std::vector<std::string>& arguments,
 					std::string& flags,
 					std::vector<std::string>& source_files,
 					std::vector<std::string>& output_files) {
 	flags = get_cmdline_flags(arguments);
-	std::cout << "Flags: " << flags << "\n";
-	source_files = get_cmdline_source(arguments);
-	std::cout << "Source files:\n";
-	print(source_files);
 	output_files = get_cmdline_output(arguments);
-	std::cout << "Output files:\n";
-	print(output_files);
+	source_files = get_cmdline_source(arguments); // Note this has to be last as sources files do not have a check
 	if(source_files.empty()) {
 		std::cerr << "Error: Missing files to search\n";
 		return;

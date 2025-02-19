@@ -16,8 +16,9 @@ std::vector<std::string> get_cmdline_source(std::vector<std::string>& arguments)
 			end_idx = idx-1;
 			break;
 		}
-		else if(start_idx)
+		else if(start_idx) {
 			source_files.push_back(arguments[idx]);
+		}
 	}
 	if(start_idx) {
 		arguments.erase(arguments.begin()+start_idx, arguments.end()+end_idx);
@@ -29,7 +30,7 @@ std::string get_cmdline_flags(std::vector<std::string>& arguments) {
 	std::string flags = "";
 	for(uint64_t idx = 0; idx < arguments.size(); idx++) {
 		flags = arguments[idx];
-		if(flags[0] == FLAG_START && flags != OUTPUT_START) {
+		if(flags[0] == FLAG_START && flags != INPUT_START && flags != OUTPUT_START) {
 			flags.erase(0, 1);
 			arguments.erase(arguments.begin() + idx);
 			return flags;
