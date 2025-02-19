@@ -4,6 +4,7 @@ void search_file(std::ifstream& source_file, std::ostream* output_stream, uint8_
 	const std::string MATCHCOLOR = BOLDRED;
 	std::string file_line = "";
 
+	// This logic definitely has some inefficiencies.
 	for(uint64_t lineno = 0; std::getline(source_file, file_line); lineno++) {
 		std::string matching_line = "ln " + std::to_string(lineno) + ":\t\t";
 		std::string matching_chars = "";
@@ -16,7 +17,8 @@ void search_file(std::ifstream& source_file, std::ostream* output_stream, uint8_
 					matching_line += MATCHCOLOR + matching_chars + RESET;
 				else
 					matching_line += matching_chars;
-				
+				pattern_idx = 0;
+				matching_chars = "";
 			}
 			char pattern_char = pattern[pattern_idx];
 			char file_char = file_line[line_idx];

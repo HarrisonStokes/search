@@ -42,7 +42,8 @@ int main(int argc, char** argv) {
 		std::ifstream source(source_files[source_idx]);
 		for(uint64_t pattern_idx = 0; pattern_idx < patterns.size(); pattern_idx++) {
 			std::string pattern = patterns[pattern_idx];
-			std::string message = source_files[source_idx] + ":\t" + RESET + pattern;
+			std::string message = source_files[source_idx] + ":\t" + RESET + pattern + "\n";
+			output_stream << message;
 			search_file(source, &output_stream, flag_bitfield, pattern);
 			source.clear();
 			source.seekg(0, std::ios::beg);
