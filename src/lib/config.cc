@@ -11,9 +11,7 @@ std::vector<std::string> process_config() {
 			continue;
 		std::string word = "";
 		for(uint16_t idx = 0; idx < line.length(); idx++) {
-			char letter = line[idx];
-			if(letter >= 'A' || letter <= 'Z')
-				letter |= lowercase_bit;
+			char letter = std::tolower(line[idx]);
 			if(key_count > 3) {
 				break;									// FIXME Will cause an unexplained error. It will delete the rest of the json keys and it will throw an error in validate_config() without describing the root error.
 			}

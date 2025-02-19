@@ -88,6 +88,11 @@ void process_inputs(std::vector<std::string>& arguments,
 		std::pair<uint64_t, uint64_t> indexes = valid.second;
 		flags = get_config_flags(arguments, indexes); 
 		output_files = get_config_output(arguments, indexes);
+		std::cout << "Flags:\t" << flags << "\n";
+		std::cout << "Input Files:\n";
+		print(source_files);
+		std::cout << "Output Files:\n";
+		print(output_files);
 	}
 }
 

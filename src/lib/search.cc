@@ -61,6 +61,7 @@ void search_file(std::ifstream& source, std::ostream* output, const uint8_t& fla
 
 	for(uint64_t lineno = 0; std::getline(source, line); lineno++) {
 		std::vector<int> occurences = boyerMooreSearch(charTable, line, pattern);
+		std::cout << line << "\n";
 		if(occurences.empty())
 			continue;
 		*output << "ln" << lineno << ":\t\t" << build_message(flags, occurences, line, pattern.length());
