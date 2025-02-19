@@ -1,12 +1,5 @@
 #include "../include/config.h"
 
-#define CONFIG_PATH "config.json"
-#define CONFIG_OUTPUT_KEY "OUTPUTS"
-#define CONFIG_FLAG_KEY "FLAGS"
-#define ERR_CONFIG_MISSING_KEYS -1
-#define ERR_CONFIG_INVALID_NAME -2
-#define ERR_CONFIG_TOO_MANY_KEYS -3
-
 std::vector<std::string> process_config() {
 	constexpr uint8_t lowercase_bit = 0x20;
 	std::ifstream file(CONFIG_PATH);

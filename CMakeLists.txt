@@ -2,14 +2,14 @@ cmake_minimum_required(VERSION 3.10)
 
 project(way)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 set(SOURCES
-	src/flags.cc
-	src/config.cc
-	src/cmdline.cc
-	src/search.cc
+	src/lib/flags.cc
+	src/lib/config.cc
+	src/lib/cmdline.cc
+	src/lib/search.cc
 	src/main.cc
 )
 

@@ -69,61 +69,61 @@ include CMakeFiles/way.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/way.dir/flags.make
 
-CMakeFiles/way.dir/src/flags.cc.o: CMakeFiles/way.dir/flags.make
-CMakeFiles/way.dir/src/flags.cc.o: /home/machinekiller36/way/src/flags.cc
-CMakeFiles/way.dir/src/flags.cc.o: CMakeFiles/way.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/machinekiller36/way/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/way.dir/src/flags.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/way.dir/src/flags.cc.o -MF CMakeFiles/way.dir/src/flags.cc.o.d -o CMakeFiles/way.dir/src/flags.cc.o -c /home/machinekiller36/way/src/flags.cc
+CMakeFiles/way.dir/src/lib/flags.cc.o: CMakeFiles/way.dir/flags.make
+CMakeFiles/way.dir/src/lib/flags.cc.o: /home/machinekiller36/way/src/lib/flags.cc
+CMakeFiles/way.dir/src/lib/flags.cc.o: CMakeFiles/way.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/machinekiller36/way/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/way.dir/src/lib/flags.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/way.dir/src/lib/flags.cc.o -MF CMakeFiles/way.dir/src/lib/flags.cc.o.d -o CMakeFiles/way.dir/src/lib/flags.cc.o -c /home/machinekiller36/way/src/lib/flags.cc
 
-CMakeFiles/way.dir/src/flags.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/way.dir/src/flags.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/machinekiller36/way/src/flags.cc > CMakeFiles/way.dir/src/flags.cc.i
+CMakeFiles/way.dir/src/lib/flags.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/way.dir/src/lib/flags.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/machinekiller36/way/src/lib/flags.cc > CMakeFiles/way.dir/src/lib/flags.cc.i
 
-CMakeFiles/way.dir/src/flags.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/way.dir/src/flags.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/machinekiller36/way/src/flags.cc -o CMakeFiles/way.dir/src/flags.cc.s
+CMakeFiles/way.dir/src/lib/flags.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/way.dir/src/lib/flags.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/machinekiller36/way/src/lib/flags.cc -o CMakeFiles/way.dir/src/lib/flags.cc.s
 
-CMakeFiles/way.dir/src/config.cc.o: CMakeFiles/way.dir/flags.make
-CMakeFiles/way.dir/src/config.cc.o: /home/machinekiller36/way/src/config.cc
-CMakeFiles/way.dir/src/config.cc.o: CMakeFiles/way.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/machinekiller36/way/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/way.dir/src/config.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/way.dir/src/config.cc.o -MF CMakeFiles/way.dir/src/config.cc.o.d -o CMakeFiles/way.dir/src/config.cc.o -c /home/machinekiller36/way/src/config.cc
+CMakeFiles/way.dir/src/lib/config.cc.o: CMakeFiles/way.dir/flags.make
+CMakeFiles/way.dir/src/lib/config.cc.o: /home/machinekiller36/way/src/lib/config.cc
+CMakeFiles/way.dir/src/lib/config.cc.o: CMakeFiles/way.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/machinekiller36/way/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/way.dir/src/lib/config.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/way.dir/src/lib/config.cc.o -MF CMakeFiles/way.dir/src/lib/config.cc.o.d -o CMakeFiles/way.dir/src/lib/config.cc.o -c /home/machinekiller36/way/src/lib/config.cc
 
-CMakeFiles/way.dir/src/config.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/way.dir/src/config.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/machinekiller36/way/src/config.cc > CMakeFiles/way.dir/src/config.cc.i
+CMakeFiles/way.dir/src/lib/config.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/way.dir/src/lib/config.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/machinekiller36/way/src/lib/config.cc > CMakeFiles/way.dir/src/lib/config.cc.i
 
-CMakeFiles/way.dir/src/config.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/way.dir/src/config.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/machinekiller36/way/src/config.cc -o CMakeFiles/way.dir/src/config.cc.s
+CMakeFiles/way.dir/src/lib/config.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/way.dir/src/lib/config.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/machinekiller36/way/src/lib/config.cc -o CMakeFiles/way.dir/src/lib/config.cc.s
 
-CMakeFiles/way.dir/src/cmdline.cc.o: CMakeFiles/way.dir/flags.make
-CMakeFiles/way.dir/src/cmdline.cc.o: /home/machinekiller36/way/src/cmdline.cc
-CMakeFiles/way.dir/src/cmdline.cc.o: CMakeFiles/way.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/machinekiller36/way/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/way.dir/src/cmdline.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/way.dir/src/cmdline.cc.o -MF CMakeFiles/way.dir/src/cmdline.cc.o.d -o CMakeFiles/way.dir/src/cmdline.cc.o -c /home/machinekiller36/way/src/cmdline.cc
+CMakeFiles/way.dir/src/lib/cmdline.cc.o: CMakeFiles/way.dir/flags.make
+CMakeFiles/way.dir/src/lib/cmdline.cc.o: /home/machinekiller36/way/src/lib/cmdline.cc
+CMakeFiles/way.dir/src/lib/cmdline.cc.o: CMakeFiles/way.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/machinekiller36/way/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/way.dir/src/lib/cmdline.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/way.dir/src/lib/cmdline.cc.o -MF CMakeFiles/way.dir/src/lib/cmdline.cc.o.d -o CMakeFiles/way.dir/src/lib/cmdline.cc.o -c /home/machinekiller36/way/src/lib/cmdline.cc
 
-CMakeFiles/way.dir/src/cmdline.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/way.dir/src/cmdline.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/machinekiller36/way/src/cmdline.cc > CMakeFiles/way.dir/src/cmdline.cc.i
+CMakeFiles/way.dir/src/lib/cmdline.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/way.dir/src/lib/cmdline.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/machinekiller36/way/src/lib/cmdline.cc > CMakeFiles/way.dir/src/lib/cmdline.cc.i
 
-CMakeFiles/way.dir/src/cmdline.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/way.dir/src/cmdline.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/machinekiller36/way/src/cmdline.cc -o CMakeFiles/way.dir/src/cmdline.cc.s
+CMakeFiles/way.dir/src/lib/cmdline.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/way.dir/src/lib/cmdline.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/machinekiller36/way/src/lib/cmdline.cc -o CMakeFiles/way.dir/src/lib/cmdline.cc.s
 
-CMakeFiles/way.dir/src/search.cc.o: CMakeFiles/way.dir/flags.make
-CMakeFiles/way.dir/src/search.cc.o: /home/machinekiller36/way/src/search.cc
-CMakeFiles/way.dir/src/search.cc.o: CMakeFiles/way.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/machinekiller36/way/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/way.dir/src/search.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/way.dir/src/search.cc.o -MF CMakeFiles/way.dir/src/search.cc.o.d -o CMakeFiles/way.dir/src/search.cc.o -c /home/machinekiller36/way/src/search.cc
+CMakeFiles/way.dir/src/lib/search.cc.o: CMakeFiles/way.dir/flags.make
+CMakeFiles/way.dir/src/lib/search.cc.o: /home/machinekiller36/way/src/lib/search.cc
+CMakeFiles/way.dir/src/lib/search.cc.o: CMakeFiles/way.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/machinekiller36/way/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/way.dir/src/lib/search.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/way.dir/src/lib/search.cc.o -MF CMakeFiles/way.dir/src/lib/search.cc.o.d -o CMakeFiles/way.dir/src/lib/search.cc.o -c /home/machinekiller36/way/src/lib/search.cc
 
-CMakeFiles/way.dir/src/search.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/way.dir/src/search.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/machinekiller36/way/src/search.cc > CMakeFiles/way.dir/src/search.cc.i
+CMakeFiles/way.dir/src/lib/search.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/way.dir/src/lib/search.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/machinekiller36/way/src/lib/search.cc > CMakeFiles/way.dir/src/lib/search.cc.i
 
-CMakeFiles/way.dir/src/search.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/way.dir/src/search.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/machinekiller36/way/src/search.cc -o CMakeFiles/way.dir/src/search.cc.s
+CMakeFiles/way.dir/src/lib/search.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/way.dir/src/lib/search.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/machinekiller36/way/src/lib/search.cc -o CMakeFiles/way.dir/src/lib/search.cc.s
 
 CMakeFiles/way.dir/src/main.cc.o: CMakeFiles/way.dir/flags.make
 CMakeFiles/way.dir/src/main.cc.o: /home/machinekiller36/way/src/main.cc
@@ -141,19 +141,19 @@ CMakeFiles/way.dir/src/main.cc.s: cmake_force
 
 # Object files for target way
 way_OBJECTS = \
-"CMakeFiles/way.dir/src/flags.cc.o" \
-"CMakeFiles/way.dir/src/config.cc.o" \
-"CMakeFiles/way.dir/src/cmdline.cc.o" \
-"CMakeFiles/way.dir/src/search.cc.o" \
+"CMakeFiles/way.dir/src/lib/flags.cc.o" \
+"CMakeFiles/way.dir/src/lib/config.cc.o" \
+"CMakeFiles/way.dir/src/lib/cmdline.cc.o" \
+"CMakeFiles/way.dir/src/lib/search.cc.o" \
 "CMakeFiles/way.dir/src/main.cc.o"
 
 # External object files for target way
 way_EXTERNAL_OBJECTS =
 
-way: CMakeFiles/way.dir/src/flags.cc.o
-way: CMakeFiles/way.dir/src/config.cc.o
-way: CMakeFiles/way.dir/src/cmdline.cc.o
-way: CMakeFiles/way.dir/src/search.cc.o
+way: CMakeFiles/way.dir/src/lib/flags.cc.o
+way: CMakeFiles/way.dir/src/lib/config.cc.o
+way: CMakeFiles/way.dir/src/lib/cmdline.cc.o
+way: CMakeFiles/way.dir/src/lib/search.cc.o
 way: CMakeFiles/way.dir/src/main.cc.o
 way: CMakeFiles/way.dir/build.make
 way: CMakeFiles/way.dir/link.txt

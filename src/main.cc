@@ -13,13 +13,22 @@
 		./way [source files]
 
 */
+
+/*
+###########################################
+Not working:
+     process_inputs()
+	         Not getting source files from command line.
+*/
+
+
 static std::vector<std::string> vectorized(int argc, char** argv);
-static void process_inputs(std::vector<std::string> arguments, std::string flags, std::vector<std::string> output_files);
-static std::ostream& set_output(std::vector<std::string> output_files);
+static void process_inputs(std::vector<std::string>& arguments, std::string& flags, std::vector<std::string>& source_files, std::vector<std::string>& output_files);
+static std::ostream& set_output(std::vector<std::string>& output_files);
 
 int main(int argc, char** argv) {
 	if(argc < 2) {
-		std::cerr << "Error: Missing file to search";
+		std::cerr << "Error: Missing file to search\n";
 		return -1;
 	}
 	std::vector<std::string> arguments, source_files, output_files;
@@ -36,7 +45,7 @@ int main(int argc, char** argv) {
 		for(uint64_t pattern_idx = 0; pattern_idx < patterns.size(); pattern_idx++) {
 			std::string pattern = patterns[pattern_idx];
 			std::string message = source_files[source_idx] + ":\t" + RESET + pattern;
-			search_file(source, output_stream, flag_bitfield, pattern);
+			search_file(source, &output_stream, flag_bitfield, pattern);
 			source.clear();
 			source.seekg(0, std::ios::beg);
 		}
@@ -51,15 +60,26 @@ std::vector<std::string> vectorized(int argc, char** argv) {
 	return arguments;
 }
 
+void print(std::vector<std::string> v) {
+	for(uint64_t idx = 0; idx < v.size(); idx++) {
+		std::cout << "Idx " << idx << ": " << v[idx] << "\n";
+	}
+}
+
 void process_inputs(std::vector<std::string>& arguments,
 					std::string& flags,
 					std::vector<std::string>& source_files,
 					std::vector<std::string>& output_files) {
 	flags = get_cmdline_flags(arguments);
+	std::cout << "Flags: " << flags << "\n";
 	source_files = get_cmdline_source(arguments);
+	std::cout << "Source files:\n";
+	print(source_files);
 	output_files = get_cmdline_output(arguments);
+	std::cout << "Output files:\n";
+	print(output_files);
 	if(source_files.empty()) {
-		std::cerr << "Error: Missing files to search";
+		std::cerr << "Error: Missing files to search\n";
 		return;
 	}
 	if(arguments.empty()) {
@@ -78,7 +98,7 @@ void process_inputs(std::vector<std::string>& arguments,
 				break;
 		}
 		std::pair<uint64_t, uint64_t> indexes = valid.second;
-		flags = get_config_flag(arguments, indexes); 
+		flags = get_config_flags(arguments, indexes); 
 		output_files = get_config_output(arguments, indexes);
 	}
 }
@@ -88,10 +108,4 @@ std::ostream& set_output(std::vector<std::string>& output_files) {
 		return std::cout;
 	static std::ofstream file_output(output_files[0]);
 	return file_output;
-}
-
-void copy_outputs(std::ostream* output_stream, std::vector<std::string> output_files) {
-	if(output_files.size() < 1)
-		return;
-
 }

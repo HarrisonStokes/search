@@ -8,11 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/machinekiller36/way/src/cmdline.cc" "CMakeFiles/way.dir/src/cmdline.cc.o" "gcc" "CMakeFiles/way.dir/src/cmdline.cc.o.d"
-  "/home/machinekiller36/way/src/config.cc" "CMakeFiles/way.dir/src/config.cc.o" "gcc" "CMakeFiles/way.dir/src/config.cc.o.d"
-  "/home/machinekiller36/way/src/flags.cc" "CMakeFiles/way.dir/src/flags.cc.o" "gcc" "CMakeFiles/way.dir/src/flags.cc.o.d"
+  "/home/machinekiller36/way/src/lib/cmdline.cc" "CMakeFiles/way.dir/src/lib/cmdline.cc.o" "gcc" "CMakeFiles/way.dir/src/lib/cmdline.cc.o.d"
+  "/home/machinekiller36/way/src/lib/config.cc" "CMakeFiles/way.dir/src/lib/config.cc.o" "gcc" "CMakeFiles/way.dir/src/lib/config.cc.o.d"
+  "/home/machinekiller36/way/src/lib/flags.cc" "CMakeFiles/way.dir/src/lib/flags.cc.o" "gcc" "CMakeFiles/way.dir/src/lib/flags.cc.o.d"
+  "/home/machinekiller36/way/src/lib/search.cc" "CMakeFiles/way.dir/src/lib/search.cc.o" "gcc" "CMakeFiles/way.dir/src/lib/search.cc.o.d"
   "/home/machinekiller36/way/src/main.cc" "CMakeFiles/way.dir/src/main.cc.o" "gcc" "CMakeFiles/way.dir/src/main.cc.o.d"
-  "/home/machinekiller36/way/src/search.cc" "CMakeFiles/way.dir/src/search.cc.o" "gcc" "CMakeFiles/way.dir/src/search.cc.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

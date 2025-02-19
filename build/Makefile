@@ -129,77 +129,101 @@ way/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/build
 .PHONY : way/fast
 
-src/cmdline.o: src/cmdline.cc.o
-.PHONY : src/cmdline.o
+src/lib/cmdline.o: src/lib/cmdline.cc.o
+.PHONY : src/lib/cmdline.o
 
 # target to build an object file
-src/cmdline.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/cmdline.cc.o
-.PHONY : src/cmdline.cc.o
+src/lib/cmdline.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/lib/cmdline.cc.o
+.PHONY : src/lib/cmdline.cc.o
 
-src/cmdline.i: src/cmdline.cc.i
-.PHONY : src/cmdline.i
+src/lib/cmdline.i: src/lib/cmdline.cc.i
+.PHONY : src/lib/cmdline.i
 
 # target to preprocess a source file
-src/cmdline.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/cmdline.cc.i
-.PHONY : src/cmdline.cc.i
+src/lib/cmdline.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/lib/cmdline.cc.i
+.PHONY : src/lib/cmdline.cc.i
 
-src/cmdline.s: src/cmdline.cc.s
-.PHONY : src/cmdline.s
+src/lib/cmdline.s: src/lib/cmdline.cc.s
+.PHONY : src/lib/cmdline.s
 
 # target to generate assembly for a file
-src/cmdline.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/cmdline.cc.s
-.PHONY : src/cmdline.cc.s
+src/lib/cmdline.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/lib/cmdline.cc.s
+.PHONY : src/lib/cmdline.cc.s
 
-src/config.o: src/config.cc.o
-.PHONY : src/config.o
+src/lib/config.o: src/lib/config.cc.o
+.PHONY : src/lib/config.o
 
 # target to build an object file
-src/config.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/config.cc.o
-.PHONY : src/config.cc.o
+src/lib/config.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/lib/config.cc.o
+.PHONY : src/lib/config.cc.o
 
-src/config.i: src/config.cc.i
-.PHONY : src/config.i
+src/lib/config.i: src/lib/config.cc.i
+.PHONY : src/lib/config.i
 
 # target to preprocess a source file
-src/config.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/config.cc.i
-.PHONY : src/config.cc.i
+src/lib/config.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/lib/config.cc.i
+.PHONY : src/lib/config.cc.i
 
-src/config.s: src/config.cc.s
-.PHONY : src/config.s
+src/lib/config.s: src/lib/config.cc.s
+.PHONY : src/lib/config.s
 
 # target to generate assembly for a file
-src/config.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/config.cc.s
-.PHONY : src/config.cc.s
+src/lib/config.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/lib/config.cc.s
+.PHONY : src/lib/config.cc.s
 
-src/flags.o: src/flags.cc.o
-.PHONY : src/flags.o
+src/lib/flags.o: src/lib/flags.cc.o
+.PHONY : src/lib/flags.o
 
 # target to build an object file
-src/flags.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/flags.cc.o
-.PHONY : src/flags.cc.o
+src/lib/flags.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/lib/flags.cc.o
+.PHONY : src/lib/flags.cc.o
 
-src/flags.i: src/flags.cc.i
-.PHONY : src/flags.i
+src/lib/flags.i: src/lib/flags.cc.i
+.PHONY : src/lib/flags.i
 
 # target to preprocess a source file
-src/flags.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/flags.cc.i
-.PHONY : src/flags.cc.i
+src/lib/flags.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/lib/flags.cc.i
+.PHONY : src/lib/flags.cc.i
 
-src/flags.s: src/flags.cc.s
-.PHONY : src/flags.s
+src/lib/flags.s: src/lib/flags.cc.s
+.PHONY : src/lib/flags.s
 
 # target to generate assembly for a file
-src/flags.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/flags.cc.s
-.PHONY : src/flags.cc.s
+src/lib/flags.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/lib/flags.cc.s
+.PHONY : src/lib/flags.cc.s
+
+src/lib/search.o: src/lib/search.cc.o
+.PHONY : src/lib/search.o
+
+# target to build an object file
+src/lib/search.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/lib/search.cc.o
+.PHONY : src/lib/search.cc.o
+
+src/lib/search.i: src/lib/search.cc.i
+.PHONY : src/lib/search.i
+
+# target to preprocess a source file
+src/lib/search.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/lib/search.cc.i
+.PHONY : src/lib/search.cc.i
+
+src/lib/search.s: src/lib/search.cc.s
+.PHONY : src/lib/search.s
+
+# target to generate assembly for a file
+src/lib/search.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/lib/search.cc.s
+.PHONY : src/lib/search.cc.s
 
 src/main.o: src/main.cc.o
 .PHONY : src/main.o
@@ -225,30 +249,6 @@ src/main.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/main.cc.s
 .PHONY : src/main.cc.s
 
-src/search.o: src/search.cc.o
-.PHONY : src/search.o
-
-# target to build an object file
-src/search.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/search.cc.o
-.PHONY : src/search.cc.o
-
-src/search.i: src/search.cc.i
-.PHONY : src/search.i
-
-# target to preprocess a source file
-src/search.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/search.cc.i
-.PHONY : src/search.cc.i
-
-src/search.s: src/search.cc.s
-.PHONY : src/search.s
-
-# target to generate assembly for a file
-src/search.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/way.dir/build.make CMakeFiles/way.dir/src/search.cc.s
-.PHONY : src/search.cc.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -258,21 +258,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... way"
-	@echo "... src/cmdline.o"
-	@echo "... src/cmdline.i"
-	@echo "... src/cmdline.s"
-	@echo "... src/config.o"
-	@echo "... src/config.i"
-	@echo "... src/config.s"
-	@echo "... src/flags.o"
-	@echo "... src/flags.i"
-	@echo "... src/flags.s"
+	@echo "... src/lib/cmdline.o"
+	@echo "... src/lib/cmdline.i"
+	@echo "... src/lib/cmdline.s"
+	@echo "... src/lib/config.o"
+	@echo "... src/lib/config.i"
+	@echo "... src/lib/config.s"
+	@echo "... src/lib/flags.o"
+	@echo "... src/lib/flags.i"
+	@echo "... src/lib/flags.s"
+	@echo "... src/lib/search.o"
+	@echo "... src/lib/search.i"
+	@echo "... src/lib/search.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/search.o"
-	@echo "... src/search.i"
-	@echo "... src/search.s"
 .PHONY : help
 
 

@@ -4,7 +4,7 @@
 #define OUTPUT_START "-o"
 #define INPUT_START "-i"
 
-std::vector<std::string> get_source_files(std::vector<std::string>& arguments) {
+std::vector<std::string> get_cmdline_source(std::vector<std::string>& arguments) {
 	std::vector<std::string> source_files;
 	uint64_t start_idx = 0;
 	uint64_t end_idx = 0;

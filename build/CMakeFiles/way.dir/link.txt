@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/way.dir/src/flags.cc.o CMakeFiles/way.dir/src/config.cc.o CMakeFiles/way.dir/src/cmdline.cc.o CMakeFiles/way.dir/src/search.cc.o CMakeFiles/way.dir/src/main.cc.o -o way 
+/usr/bin/c++ CMakeFiles/way.dir/src/lib/flags.cc.o CMakeFiles/way.dir/src/lib/config.cc.o CMakeFiles/way.dir/src/lib/cmdline.cc.o CMakeFiles/way.dir/src/lib/search.cc.o CMakeFiles/way.dir/src/main.cc.o -o way 
