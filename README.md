@@ -1,20 +1,14 @@
 # Where Are You (WAY)
 
-
 ## TODO:
-1. Refactor
-	* Focusing on modularality, portability, and redudancy
-2. Fix config support
-3. Make sure name issues are fixed
+    1. Add more rigorous testing.
+    2. Implement following features:
+         * -q, to make the program return true or false when a pattern is found.
+         * -d, to search files in a directory.
+         * -R, to search a directory and all its subdirectory files.
 
-## Operations
-
-### Execution
-#### General
-./way [src1 ... srcN] -FLAGS  [-o dest1 ... -o destN]
-#### Starting from a pathway
-./way [starting path] -R(FLAGS) [-o dest1 ... -o destN]
-
+## How to use
+`./way [patterns] -i [source files] -[flags] -o [output files]`
 
 
 ### Flags
